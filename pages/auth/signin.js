@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image"
 import { getProviders, signIn, useSession } from "next-auth/react"
-import SpotifyTextLogo from "/public/Spotify-textLogo.jpeg"
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Loader from "../../components/Loader";
@@ -29,7 +28,7 @@ const SignIn = ({ providers }) => {
             </Head>
 
             <Image
-                src={SpotifyTextLogo}
+                src="/Spotify-textLogo.jpeg"
                 alt="logo"
                 height={250}
                 width={500}

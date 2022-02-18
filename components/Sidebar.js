@@ -2,7 +2,7 @@ import Image from "next/image"
 import { BsMicFill, BsThreeDots } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
 import { FaCompass } from "react-icons/fa";
-import SpotifyIcon from "../public/Spotify-icon.png"
+
 
 
 
@@ -11,7 +11,8 @@ const Sidebar = () => {
         <section className="fixed top-0 z-40 flex flex-col p-4 items-center bg-neutral-800
         w-[80px] h-screen space-y-8
          " >
-            <Image src={SpotifyIcon}
+            <Image src="/Spotify-icon.png"
+                alt="icon"
                 height={50}
                 width={50}
                 objectFit={"contain"}
