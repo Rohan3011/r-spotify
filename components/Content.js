@@ -2,7 +2,7 @@
 import { useSession } from 'next-auth/react';
 import React, { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { trackTypeState } from '../atoms/playerAtom';
+import { trackTypeState, searchFieldState } from '../atoms/playerAtom';
 import Cards from './body/Cards';
 import SearchBar from './body/SearchBar';
 import SongList from './body/SongList';
@@ -10,7 +10,7 @@ import SongList from './body/SongList';
 const Content = ({ spotifyApi }) => {
     const { data: session } = useSession();
     const { accessToken } = session;
-    const [searchField, setSearchField] = useState('');
+    const [searchField, setSearchField] = useRecoilState(searchFieldState);
     const [newReleases, setNewReleases] = useState([]);
     const [searchResults, setSearchResults] = useState([]);
     const [trackType, setTrackType] = useRecoilState(trackTypeState)

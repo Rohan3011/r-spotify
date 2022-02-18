@@ -14,3 +14,8 @@ export const trackTypeState = atom({
     key: "trackTypeState",
     default: "Tracks",
 })
+
+export const searchFieldState = atom({
+    key: "searchFieldState",
+    default: ""
+})
