@@ -5,7 +5,8 @@ const SearchBar = ({ searchField, setSearchField }) => {
         <div className=" max-w-[1150px] bg-neutral-700 rounded-full border-2 
         overflow-hidden border-neutral-500 p-1 flex items-center
         " >
-            <div className="h-4 w-4 rounded-full m-2  border-2 flex-shrink-0 animate-pulse" />
+            <div onClick={() => setSearchField("")}
+                className="h-4 w-4 rounded-full m-2  border-2 flex-shrink-0 animate-pulse hover:cursor-pointer" />
             <input
                 type={"text"}
                 value={searchField}
