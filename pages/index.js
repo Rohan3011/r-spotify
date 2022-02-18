@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { useSession } from "next-auth/react"
 import { useRouter } from "next/router"
-import Content from '../components/Content'
 import Dashboard from '../components/Dashboard'
 import Loader from '../components/Loader'
 
@@ -33,14 +32,3 @@ export default function Home() {
 }
 
 
-
-export async function getStaticProps() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-  const articles = await res.json()
-
-  return {
-    props: {
-      articles
-    }
-  }
-}
