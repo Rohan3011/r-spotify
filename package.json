@@ -1,5 +1,5 @@
 {
-  "name": "spotify-shareplay",
+  "name": "r-spotify",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,12 +8,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "@headlessui/react": "^1.4.3",
+    "@tailwindcss/forms": "^0.4.0",
+    "next": "12.0.9",
+    "next-auth": "^4.2.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-spotify-web-playback": "^0.9.1",
+    "recoil": "^0.6.1",
+    "spotify-web-api-node": "^5.0.2",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10"
+    "eslint-config-next": "12.0.10",
+    "postcss": "^8.4.6",
+    "tailwind-scrollbar": "^1.3.1",
+    "tailwindcss": "^3.0.19"
   }
 }

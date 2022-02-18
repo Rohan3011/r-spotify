@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply bg-neutral-800 scrollbar-hide;
+    }
+}
+
+@layer components {
+
+    .tags{
+        @apply text-neutral-300 text-sm rounded-lg bg-neutral-700 px-3 py-1 border-2 border-neutral-500 hover:bg-neutral-600 hover:scale-105 cursor-pointer
+    }
+
+    .spotify-green{
+        @apply bg-[#1DB954] group-hover:bg-[#1ed760] ;
+    }
+  
+    .icon{
+        @apply  text-slate-200 text-xl cursor-pointer rounded-full hover:scale-125 transition-all duration-150 ease-out ;
+    }
+
+    .play-pause{
+        @apply icon text-2xl text-white ml-[2px]  ;
+    }
+    
+    .title{
+        @apply text-white font-bold mb-2 ;
+    }
+    
+}
